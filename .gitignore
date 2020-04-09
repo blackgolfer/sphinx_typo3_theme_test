@@ -1,2 +1,4 @@
 build/*
 .vscode/*
+t3docs_build/*
+sphinx_build/*

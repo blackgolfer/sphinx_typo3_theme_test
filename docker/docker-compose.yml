@@ -1,0 +1,38 @@
+version: '3.7'
+
+services:
+    plantuml:
+        build: 
+            context: plantuml
+            cache_from:
+                - blackgolfer/plantuml:latest
+        image: blackgolfer/plantuml
+
+    texlive:
+        build:
+            context: texlive
+            cache_from:
+                - blackgolfer/plantuml:latest
+                - blackgolfer/texlive:latest
+        image: blackgolfer/texlive
+
+    sphinx:
+        build:
+            context: sphinx
+            args: 
+                - NB_USER=$USER
+                - NB_GROUP=users
+                - NB_UID=1000
+            cache_from:
+                - blackgolfer/plantuml:latest
+                - blackgolfer/texlive:latest
+                - blackgolfer/sphinx:latest
+        image: blackgolfer/sphinx
+    
+    # t3docs:
+    #     build:
+    #         context: t3docs
+    #         cache_from:
+    #             - plantuml
+    #             - texlive
+    #     image: t3docs

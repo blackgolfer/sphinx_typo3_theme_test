@@ -1,2 +1,7 @@
-# sphinx_typo3_theme_test
-testing the sphinx_typo3_theme
+# Using sphinx_typo3_theme
+
+To build the documents using `sphinx-build`:
+```shell
+make local-pages-sphinx
+```
+

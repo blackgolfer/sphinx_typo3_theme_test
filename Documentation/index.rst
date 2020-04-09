@@ -14,7 +14,10 @@ Testing sphinx_typo3_theme
    :hidden:
    :caption: Contents:
 
-   ml
+   t3docs/index
+   latex/index
+   graphviz/index
+   plantuml/index
 
 Indices and tables
 ==================

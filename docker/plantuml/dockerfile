@@ -1,0 +1,21 @@
+FROM ubuntu:latest
+
+RUN apt update
+# jre
+RUN apt-get install -y openjdk-11-jre-headless
+RUN apt-get install -y wget ca-certificates
+
+# PlantUML
+RUN mkdir /opt/plantuml
+RUN wget https://netcologne.dl.sourceforge.net/project/plantuml/plantuml.jar -q --output-document=/opt/plantuml/plantuml.jar
+ENV PLANTUML_JAR=/opt/plantuml/plantuml.jar
+
+RUN apt-get install -y \
+    graphviz \
+    imagemagick \
+    make
+
+#RUN ["java", "-Djava.awt.headless=true", "-jar", "/opt/plantuml/plantuml.jar", "-version"]
+#RUN ["dot", "-version"]
+#ENTRYPOINT ["java", "-Djava.awt.headless=true", "-jar", "/opt/plantuml/plantuml.jar", "-p"]
+#CMD ["-tsvg"]

@@ -1,0 +1,6 @@
+sphinxcontrib-tikz
+sphinxcontrib-plantuml
+recommonmark
+nbsphinx
+sphinxcontrib-jupyter
+sphinxcontrib-proof

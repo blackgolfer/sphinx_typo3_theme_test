@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'sphinx_typo3_theme_test'
+project = 'Testing\n sphinx_typo3_theme'
 copyright = '2020, Zhifeng Zhang'
 author = 'Zhifeng Zhang'
 
@@ -31,6 +31,12 @@ release = '1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx_typo3_theme'
+             ,'sphinx.ext.viewcode'
+             ,'sphinx.ext.mathjax'
+             ,'sphinx.ext.graphviz'
+             ,'sphinxcontrib.tikz'
+             ,'sphinxcontrib.plantuml'
+             ,'recommonmark'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -57,6 +63,11 @@ exclude_patterns = []
 #
 html_theme = 'sphinx_typo3_theme'
 
+html_theme_options = {
+    'github_repository': 'blackgolfer/sphinx_typo3_theme_test',
+    'github_branch': 'master'
+}
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
@@ -71,3 +82,5 @@ if is_imported:
     version = sphinx_typo3_theme.__version__
     release = sphinx_typo3_theme.__version__
     print(version,release)
+
+plantuml = 'java -Djava.awt.headless=true -jar /opt/plantuml/plantuml.jar'

@@ -1,18 +1,12 @@
-.. include:: Includes.txt
+.. include:: ../Includes.txt
 .. highlight:: rst
 
-.. _book_ml_chapter_label:
-
-==============================================
-Machine and Statistical Learning Documentation
-==============================================
-
-
+===========
 Style Guide
 ===========
 
 Referring to GUI elements
--------------------------
+=========================
 
 .. rst-class:: bignums-xxl
 
@@ -21,7 +15,7 @@ Referring to GUI elements
 #. :guilabel:`ADMIN TOOLS > Extensions`
 
 Inline code, textroles
-----------------------
+======================
 
 .. rst-class:: bignums-tip
 
@@ -30,55 +24,8 @@ Inline code, textroles
 #. :file:`/etc/passwd`
 #. :kbd:`ctrl` + :kbd:`s`
 
-buttons
--------
-
-horizbuttons-attention-m
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Like admonition 'attention' (blue)
-
-.. rst-class:: horizbuttons-attention-m
-
-* horizbuttons-attention-m
-* two
-* three
-
-horizbuttons-note-m
-~~~~~~~~~~~~~~~~~~~
-
-Like admonitions 'generic', 'note', 'see also' (neutral, grey)
-
-.. rst-class:: horizbuttons-note-m
-
-- horizbuttons-note-m
-- two
-- three
-
-horizbuttons-primary-m
-~~~~~~~~~~~~~~~~~~~~~~
-
-Use the primary = key color (TYPO3 orange)
-
-.. rst-class:: horizbuttons-primary-m
-
-- horizbuttons-primary-m
-- two
-- three
-
-horizbuttons-striking-m
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Very strinking an unusuable, cannot be overseen.
-
-.. rst-class:: horizbuttons-striking-m
-
-- horizbuttons-striking-m
-- two
-- three
-
-Code test
-=========
+Code
+====
 
 parsed-literal
 --------------
@@ -121,7 +68,7 @@ Sidebar
 
     *Above* CH'IEN THE CREATIVE, HEAVEN
 
-    .. image:: _static/images/vscode.png
+    .. image:: ../_static/images/vscode.png
 
     *Below* CH'IEN THE CREATIVE, HEAVEN
 
@@ -149,7 +96,7 @@ Code with Sidebar
     With a sidebar on the right.
 
 
-.. literalinclude:: conf.py
+.. literalinclude:: ../conf.py
     :language: python
     :linenos:
     :lines: 1-40
@@ -157,7 +104,7 @@ Code with Sidebar
 Code without Sidebar
 ====================
 
-.. literalinclude:: conf.py
+.. literalinclude:: ../conf.py
     :language: python
     :linenos:
     :lines: 1-40
@@ -182,4 +129,3 @@ parameterBcd
    :sep:`|`
 
    Text describing parameterBcd ...
-

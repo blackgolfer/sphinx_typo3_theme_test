@@ -1,0 +1,36 @@
+FROM plantuml:latest
+
+#RUN apt-get install -y perl wget
+
+# COPY texlive.profile /
+# RUN wget ftp://tug.org/historic/systems/texlive/2019/install-tl-unx.tar.gz \
+#   && tar xzvf install-tl-unx.tar.gz \
+#   && ./install-tl-*/install-tl -profile texlive.profile \
+#   && rm -rf install-tl-* \
+#   && rm texlive.profile
+
+# ENV PATH="/usr/local/texlive/2019/bin/x86_64-linuxmusl:${PATH}"
+
+ENV DEBIAN_FRONTEND noninteractive
+RUN dpkg-reconfigure debconf --frontend=noninteractive
+
+RUN apt-get install -y \
+        latexmk \
+        lmodern \
+        texlive-latex-recommended \
+        texlive-latex-extra \
+        texlive-fonts-recommended \
+        texlive-fonts-extra \
+        texlive-lang-cjk \
+        texlive-luatex \
+        texlive-xetex \
+        texlive-pictures
+RUN apt-get -y autoremove \
+    && apt-get -y clean
+
+RUN apt-get install -y \
+    pdf2svg \
+    poppler-utils \
+    netpbm \
+    poppler-utils  \
+    ghostscript

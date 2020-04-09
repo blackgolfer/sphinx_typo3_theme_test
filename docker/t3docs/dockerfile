@@ -1,0 +1,58 @@
+FROM t3docs/render-documentation as plantuml
+
+RUN apt update
+RUN apt-get install -y openjdk-11-jre-headless
+RUN apt-get install -y wget ca-certificates
+
+# PlantUML
+RUN mkdir /opt/plantuml
+RUN wget https://netcologne.dl.sourceforge.net/project/plantuml/plantuml.jar -q --output-document=/opt/plantuml/plantuml.jar
+ENV PLANTUML_JAR=/opt/plantuml/plantuml.jar
+
+RUN apt-get install -y \
+    graphviz \
+    imagemagick \
+    make
+
+RUN ["java", "-Djava.awt.headless=true", "-jar", "/opt/plantuml/plantuml.jar", "-version"]
+RUN ["dot", "-version"]
+
+
+FROM plantuml as plantuml_texlive
+
+ENV DEBIAN_FRONTEND noninteractive
+RUN dpkg-reconfigure debconf --frontend=noninteractive
+
+RUN apt-get install -y \
+        latexmk \
+        lmodern \
+        texlive-latex-recommended \
+        texlive-latex-extra \
+        texlive-fonts-recommended \
+        texlive-fonts-extra \
+        texlive-lang-cjk \
+        texlive-lang-japanese \
+        texlive-luatex \
+        texlive-xetex \
+        texlive-pictures \
+    && apt-get -y autoremove #\
+    #&& apt-get -y clean
+
+RUN apt-get install -y \
+    pdf2svg \
+    poppler-utils \
+    netpbm \
+    poppler-utils  \
+    ghostscript
+
+FROM plantuml_texlive as final
+
+#RUN pipenv shell
+#RUN pipenv install
+RUN pip install --upgrade setuptools
+RUN pip install --upgrade distribute 
+RUN pipenv install sphinxcontrib-tikz \
+                   sphinxcontrib-plantuml \
+                   nbsphinx \
+                   sphinxcontrib-jupyter \
+                   sphinxcontrib-proof
