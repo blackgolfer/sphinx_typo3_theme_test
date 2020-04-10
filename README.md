@@ -7,10 +7,10 @@ The basic desired functionalities of a documentation system are
 - t3docs documentation
 - basic latex typesetting abilities
 - basic tikz graphic abilities
-- basic diagrams with graphviz
+- basic diagrams with graphviz (this could be opitonal)
 - basic diagrams with plantuml
 
-This a testing project for the above functions, along with the development of two building schemes: the sphinx-build scheme and the t3docs build scheme.
+This is a testing project for the above functions, along with the development of two building schemes: the sphinx-build scheme and the t3docs build scheme. The testing for t3docs are mostly from https://github.com/TYPO3-Documentation/t3SphinxThemeRtdDemoDocs/.
 
 To build the documents using `sphinx-build`:
 ```shell
@@ -40,8 +40,8 @@ cd docker/t3docs
 bash build.sh
 ```
 
-You can't push the images as specified in the `sh` files, but one can certainly pull and build them. The build scheme here is not intended to cover all suituations, rather to provide references for adapting to one's need.
+You can't push the images as specified in the `sh` files, but one can certainly pull and build them. The build schemes here are not intended to cover all suituations, but rather to provide references for adapting to one's need.
 
-As of the writing of this readme, I can not make the t3docs build scheme works for tikz, graphviz and plantuml. Anyone can give me a hand to make them work with t3docs build scheme is greatly appreciated.
+As of the writing of this readme, I can not make the t3docs build scheme works for tikz, graphviz and plantuml. Anyone can give me a hand to make them work with t3docs build scheme or any other help is greatly appreciated.
 
 Please feel free to contact me if you have any questions.
