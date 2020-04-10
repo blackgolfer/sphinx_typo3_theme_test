@@ -2,19 +2,19 @@ digraph cwbbdot {
     rankdir=TD
     node [shape = circle]
     edge [color = grey; fontsize=8]
-    s0 -> s1 [ label = collecting financial reports]
-    s1 -> s0 [ label = update financial reports]
-    s1 -> s2 [ label = collection of resarch reports]
-    s2 -> s3 [ label = research report study]
+    s0 -> s1 [ label = "collecting financial reports"]
+    s1 -> s0 [ label = "update financial reports"]
+    s1 -> s2 [ label = "collection of resarch reports"]
+    s2 -> s3 [ label = "research report study"]
     s0 -> s3
-    s3 -> s0 [ label = data update]
-    s3 -> s4 [ label = modeling high margin companies]
+    s3 -> s0 [ label = "data update"]
+    s3 -> s4 [ label = "modeling high margin companies"]
     s0 -> s4
-    s4 -> s0 [ label = data update]
-    s4 -> s5 [ label = valuation model]
+    s4 -> s0 [ label = "data update"]
+    s4 -> s5 [ label = "valuation model"]
     s0 -> s5
-    s5 -> s0 [ label = data update]
-    s5 -> s6 [ label = strategy development]
+    s5 -> s0 [ label = "data update"]
+    s5 -> s6 [ label = "strategy development"]
     s0 -> s6
-    s6 -> s0 [ label = data update]
+    s6 -> s0 [ label = "data update"]
 }

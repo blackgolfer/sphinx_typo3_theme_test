@@ -6,4 +6,7 @@ Typesetting with T3DOCS
     :caption: t3docs
 
     styleguide
+    blockquotes
     buttons
+    highlighting
+    imagesnfigures

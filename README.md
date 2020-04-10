@@ -1,5 +1,17 @@
 # Using sphinx_typo3_theme
 
+The basic desired functionalities of a documentation system are
+- sphinx-build compatible
+- sphinx_typo_theme
+- sphinx documentation compatibility
+- t3docs documentation
+- basic latex typesetting abilities
+- basic tikz graphic abilities
+- basic diagrams with graphviz
+- basic diagrams with plantuml
+
+This a testing project for the above functions, along with the development of two building schemes: the sphinx-build scheme and the t3docs build scheme.
+
 To build the documents using `sphinx-build`:
 ```shell
 make local-pages-sphinx
@@ -28,7 +40,7 @@ cd docker/t3docs
 bash build.sh
 ```
 
-You can't push the images as specified in the `sh` files, but you can certainly pull and build them. One can adapt the build scheme to suit your needs.
+You can't push the images as specified in the `sh` files, but one can certainly pull and build them. The build scheme here is not intended to cover all suituations, rather to provide references for adapting to one's need.
 
 As of the writing of this readme, I can not make the t3docs build scheme works for tikz, graphviz and plantuml. Anyone can give me a hand to make them work with t3docs build scheme is greatly appreciated.
 
