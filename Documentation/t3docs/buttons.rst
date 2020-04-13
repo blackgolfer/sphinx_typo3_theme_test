@@ -10,11 +10,11 @@ horizbuttons-attention-m
 
 Like admonition 'attention' (blue)
 
-.. rst-class:: horizbuttons-attention-m
+.. rst-class:: horizbuttons-attention-xxl
 
-* horizbuttons-attention-m
-* two
-* three
+- horizbuttons-attention-xxl
+- two
+- three
 
 horizbuttons-note-m
 -------------------
@@ -40,3 +40,7 @@ Use the primary = key color (TYPO3 orange)
 
 horizbuttons-striking-m
 -----------------------
+
+.. rst-class:: red
+
+This paragraph too is is red.

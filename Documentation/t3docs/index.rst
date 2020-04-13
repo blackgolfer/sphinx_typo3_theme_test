@@ -6,7 +6,12 @@ Typesetting with T3DOCS
     :caption: t3docs
 
     styleguide
+    inlinecodetextroles
+    numberedlist
+    tables
     blockquotes
     buttons
+    codeblocks
+    sidebar
     highlighting
     imagesnfigures

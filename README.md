@@ -1,3 +1,4 @@
+[![Build Status](https://api.travis-ci.org/dc-js/dc.js.svg?branch=master)](http://travis-ci.org/dc-js/dc.js)
 # Using sphinx_typo3_theme
 
 The basic desired functionalities of a documentation system are

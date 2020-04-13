@@ -25,6 +25,7 @@
 .. role:: typoscript(code)
 .. role:: python(code)
 .. role:: ts(typoscript)
+.. role:: haskell(code)
    :class: typoscript
 
 .. role:: yaml(code)

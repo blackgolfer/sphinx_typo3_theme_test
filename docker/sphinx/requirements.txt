@@ -5,3 +5,5 @@ nbsphinx
 sphinxcontrib-jupyter
 sphinxcontrib-proof
 sphinx-typo3-theme
+t3fieldlisttable
+sphinxcontrib-slide

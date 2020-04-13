@@ -1,0 +1,9 @@
+{
+    "name": "sphinx_typo3_theme_test",
+    "type": "typo3-cms-documentation",
+    "description": "Testing sphinx_typo3_theme",
+    "license": "OPL-1.0",
+    "require": {
+      "typo3/cms-core": "^9.5"
+    }
+}
