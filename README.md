@@ -1,4 +1,4 @@
-[![Build Status](https://api.travis-ci.org/dc-js/dc.js.svg?branch=master)](http://travis-ci.org/dc-js/dc.js)
+<!-- [![Build Status](https://api.travis-ci.org/dc-js/dc.js.svg?branch=master)](http://travis-ci.org/dc-js/dc.js) -->
 # Using sphinx_typo3_theme
 
 The basic desired functionalities of a documentation system are
@@ -22,7 +22,7 @@ one can use a browser to load the file sphinx_build/html/index.html.
 
 To build the document using `t3docs/render-documentation`:
 ```shell
-make local-pages-sphinx
+make local-pages-t3docs
 ```
 The results are in t3docs_build. To examin the result, please use a browser to load the file
 `t3docs_build/Result/project/0.0.0/t3docs/index.html`.
@@ -41,7 +41,7 @@ cd docker/t3docs
 bash build.sh
 ```
 
-You can't push the images as specified in the `sh` files, but one can certainly pull and build them. The build schemes here are not intended to cover all suituations, but rather to provide references for adapting to one's need.
+One can't push the images as specified in the `sh` files, but one can certainly pull and build them. The build schemes here are not intended to cover all suituations, but rather to provide references for adapting to one's need.
 
 As of the writing of this readme, I can not make the t3docs build scheme works for tikz, graphviz and plantuml. Anyone can give me a hand to make them work with t3docs build scheme or any other help is greatly appreciated.
 
