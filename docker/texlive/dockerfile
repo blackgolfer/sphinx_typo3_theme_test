@@ -1,4 +1,4 @@
-FROM plantuml:latest
+FROM blackgolfer/plantuml:latest
 
 #RUN apt-get install -y perl wget
 

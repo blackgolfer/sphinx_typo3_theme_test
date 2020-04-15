@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
+docker pull ubuntu
 docker pull blackgolfer/plantuml || true
 docker pull blackgolfer/texlive || true
 docker pull blackgolfer/sphinx || true

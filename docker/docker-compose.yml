@@ -5,6 +5,7 @@ services:
         build: 
             context: plantuml
             cache_from:
+                - ubuntu:latest
                 - blackgolfer/plantuml:latest
         image: blackgolfer/plantuml
 

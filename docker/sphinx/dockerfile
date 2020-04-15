@@ -1,4 +1,4 @@
-FROM texlive:latest
+FROM blackgolfer/texlive:latest
 
 ARG NB_USER
 ARG NB_GROUP
